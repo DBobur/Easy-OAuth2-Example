@@ -1,0 +1,17 @@
+for google
+https://console.cloud.google.com/  bu orqali create project qilib quyidagilarni olasiz                     client-id: ----------
+                                                                                                           client-secret: ---------------------
+
+for facebook
+https://developers.facebook.com/apps bunga kirib app yaratib undan ham quyidagilarni olish mumkin           client-id: -------------
+                                                                                                            client-secret: --------------------
+
+bular qo'shimcha free domain olib boshqa app larda ham test qilib ko'rish uchun
+https://ngrok.com/ -> shu orqali ngrok ni o'rnatib olamiz va esdan chiqmasan antivirus o'chgan bo'lishi lozim
+https://dashboard.ngrok.com/get-started/your-authtoken -> bu orqali bizga kerak tokenni olamiz
+o'rnatilgandan keyin bizda ngrok command bo'ladi va unga kirib quyidagini yozamiz
+ngrok config add-authtoken YOUR_AUTH_TOKEN
+keyin quyidagini yozamiz
+ngrok http 8080
+shu bilan bizga ngrok quyidagi free domain beradi
+https://810d-178-218-201-17.ngrok-free.app -> ago (http/localhost:8080)
