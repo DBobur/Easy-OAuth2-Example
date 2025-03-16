@@ -34,5 +34,10 @@ public class MainController {
         return ResponseEntity.ok(userEntity);
     }
 
+    @GetMapping("/get-all-users")
+    public ResponseEntity<?> users() {
+        return ResponseEntity.ok(userService.findAll());
+    }
+
 
 }
