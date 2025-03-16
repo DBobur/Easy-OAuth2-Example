@@ -16,7 +16,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests(registry ->{
-                    registry.requestMatchers("/").permitAll();
+                    registry.requestMatchers("/login").permitAll();
                     registry.anyRequest().authenticated();
                 })
                 .oauth2Login(Customizer.withDefaults())
